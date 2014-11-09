@@ -347,11 +347,13 @@ int id action_menu_presenter 0x7f090006
 int id action_mode_bar 0x7f090030
 int id action_mode_bar_stub 0x7f09002f
 int id action_mode_close_button 0x7f090022
-int id action_settings 0x7f090041
+int id action_settings 0x7f090046
 int id activity_chooser_view_content 0x7f090023
 int id always 0x7f090014
 int id beginning 0x7f09001b
 int id bottom 0x7f09001e
+int id button_login 0x7f090045
+int id button_login_passw_reset 0x7f090044
 int id checkbox 0x7f09002b
 int id collapseActionView 0x7f090015
 int id decor_content_parent 0x7f090031
@@ -359,6 +361,8 @@ int id default_activity_button 0x7f090026
 int id dialog 0x7f090019
 int id disableHome 0x7f09000d
 int id dropdown 0x7f09001a
+int id editText_login_passw 0x7f090043
+int id editText_login_username 0x7f090041
 int id edit_query 0x7f090035
 int id end 0x7f09001c
 int id expand_activities_button 0x7f090024
@@ -394,6 +398,7 @@ int id showTitle 0x7f090012
 int id split_action_bar 0x7f090004
 int id submit_area 0x7f09003e
 int id tabMode 0x7f09000c
+int id textView_login_title 0x7f090042
 int id title 0x7f090029
 int id top 0x7f09001f
 int id up 0x7f090001
@@ -444,7 +449,12 @@ int string abc_shareactionprovider_share_with 0x7f0a000e
 int string abc_shareactionprovider_share_with_application 0x7f0a000d
 int string action_settings 0x7f0a0011
 int string app_name 0x7f0a000f
+int string application_title 0x7f0a0012
 int string hello_world 0x7f0a0010
+int string login_button_passw_reset_title 0x7f0a0015
+int string login_button_title 0x7f0a0016
+int string login_passw_hint 0x7f0a0014
+int string login_username_hint 0x7f0a0013
 int style AppBaseTheme 0x7f0b00eb
 int style AppTheme 0x7f0b00ec
 int style Base_TextAppearance_AppCompat 0x7f0b0098
