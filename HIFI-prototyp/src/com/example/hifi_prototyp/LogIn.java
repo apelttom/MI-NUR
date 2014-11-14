@@ -1,9 +1,11 @@
 package com.example.hifi_prototyp;
 
 import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class LogIn extends ActionBarActivity {
 
@@ -30,5 +32,12 @@ public class LogIn extends ActionBarActivity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	/** Called when the user clicks the Password reset button */
+	public void displayPasswReset(View view) {
+		//TODO add context from login form = username
+		Intent displayPasswResetForm = new Intent(this, UserProfile.class);
+		startActivity(displayPasswResetForm);
 	}
 }

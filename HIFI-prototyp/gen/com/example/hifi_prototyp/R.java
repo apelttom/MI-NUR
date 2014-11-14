@@ -1634,6 +1634,11 @@ containing a value of this type.
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020031;
         public static final int abc_textfield_search_material=0x7f020032;
         public static final int ic_launcher=0x7f020033;
+        public static final int question_mark=0x7f020034;
+        public static final int star=0x7f020035;
+        public static final int stars2=0x7f020036;
+        public static final int stars3=0x7f020037;
+        public static final int user_picture=0x7f020038;
     }
     public static final class id {
         public static final int action_bar=0x7f090033;
@@ -1649,13 +1654,18 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f090030;
         public static final int action_mode_bar_stub=0x7f09002f;
         public static final int action_mode_close_button=0x7f090022;
-        public static final int action_settings=0x7f090046;
+        public static final int action_settings=0x7f090054;
         public static final int activity_chooser_view_content=0x7f090023;
         public static final int always=0x7f090014;
         public static final int beginning=0x7f09001b;
         public static final int bottom=0x7f09001e;
+        public static final int button_back=0x7f09004a;
         public static final int button_login=0x7f090045;
         public static final int button_login_passw_reset=0x7f090044;
+        public static final int button_passres_reset=0x7f090049;
+        public static final int button_tariff_advanced=0x7f09004e;
+        public static final int button_tariff_basic=0x7f09004c;
+        public static final int button_tariff_pro=0x7f09004d;
         public static final int checkbox=0x7f09002b;
         public static final int collapseActionView=0x7f090015;
         public static final int decor_content_parent=0x7f090031;
@@ -1665,6 +1675,8 @@ containing a value of this type.
         public static final int dropdown=0x7f09001a;
         public static final int editText_login_passw=0x7f090043;
         public static final int editText_login_username=0x7f090041;
+        public static final int editText_passres_email=0x7f090048;
+        public static final int editText_passres_username=0x7f090047;
         public static final int edit_query=0x7f090035;
         public static final int end=0x7f09001c;
         public static final int expand_activities_button=0x7f090024;
@@ -1674,12 +1686,15 @@ containing a value of this type.
         public static final int icon=0x7f090028;
         public static final int ifRoom=0x7f090016;
         public static final int image=0x7f090025;
+        public static final int imageButton1=0x7f090053;
+        public static final int imageView_user_picture=0x7f09004f;
         public static final int listMode=0x7f09000a;
         public static final int list_item=0x7f090027;
         public static final int middle=0x7f09001d;
         public static final int never=0x7f090017;
         public static final int none=0x7f09000f;
         public static final int normal=0x7f09000b;
+        public static final int progressBar_tariff=0x7f090050;
         public static final int progress_circular=0x7f090007;
         public static final int progress_horizontal=0x7f090008;
         public static final int radio=0x7f09002d;
@@ -1701,6 +1716,10 @@ containing a value of this type.
         public static final int submit_area=0x7f09003e;
         public static final int tabMode=0x7f09000c;
         public static final int textView_login_title=0x7f090042;
+        public static final int textView_passres_title=0x7f090046;
+        public static final int textView_tariff_left=0x7f090052;
+        public static final int textView_user_prof_title=0x7f09004b;
+        public static final int textView_username=0x7f090051;
         public static final int title=0x7f090029;
         public static final int top=0x7f09001f;
         public static final int up=0x7f090001;
@@ -1758,12 +1777,15 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030015;
         public static final int abc_simple_dropdown_hint=0x7f030016;
         public static final int activity_log_in=0x7f030017;
-        public static final int support_simple_spinner_dropdown_item=0x7f030018;
+        public static final int activity_password_reset=0x7f030018;
+        public static final int activity_user_profile=0x7f030019;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001a;
     }
     public static final class menu {
         public static final int log_in=0x7f0c0000;
     }
     public static final class string {
+        public static final int Tariff=0x7f0a001c;
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
         public static final int abc_action_bar_home_description=0x7f0a0001;
@@ -1820,11 +1842,21 @@ containing a value of this type.
         public static final int action_settings=0x7f0a0011;
         public static final int app_name=0x7f0a000f;
         public static final int application_title=0x7f0a0012;
+        public static final int back=0x7f0a001a;
+        public static final int dummy_tarif_left=0x7f0a001e;
+        public static final int dummy_user=0x7f0a001d;
+        public static final int email_hint=0x7f0a0018;
         public static final int hello_world=0x7f0a0010;
-        public static final int login_button_passw_reset_title=0x7f0a0015;
         public static final int login_button_title=0x7f0a0016;
-        public static final int login_passw_hint=0x7f0a0014;
-        public static final int login_username_hint=0x7f0a0013;
+        public static final int passw_hint=0x7f0a0014;
+        public static final int passw_reset_question=0x7f0a0015;
+        public static final int reset=0x7f0a0019;
+        public static final int tariff_name_adv=0x7f0a0020;
+        public static final int tariff_name_basic=0x7f0a001f;
+        public static final int tariff_name_pro=0x7f0a0021;
+        public static final int title_activity_password_reset=0x7f0a0017;
+        public static final int title_activity_user_profile=0x7f0a001b;
+        public static final int username_hint=0x7f0a0013;
     }
     public static final class style {
         /** 
@@ -2168,6 +2200,9 @@ containing a value of this type.
          */
         public static final int Widget_AppCompat_Toolbar=0x7f0b0034;
         public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0b0035;
+        /**  Buttons custom styles. 
+         */
+        public static final int button_back=0x7f0b00ed;
     }
     public static final class styleable {
         /**  ============================================ 

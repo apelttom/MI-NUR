@@ -5,9 +5,20 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="application_title">Poker King</string>
-    <string name="login_username_hint">username</string>
-    <string name="login_passw_hint">password</string>
-    <string name="login_button_passw_reset_title">Forgot your password?</string>
+    <string name="username_hint">username</string>
+    <string name="passw_hint">password</string>
+    <string name="passw_reset_question">Forgot your password?</string>
     <string name="login_button_title">Log In</string>
+    <string name="title_activity_password_reset">PasswordReset</string>
+    <string name="email_hint">e-mail</string>
+    <string name="reset">Reset</string>
+    <string name="back">Back</string>
+    <string name="title_activity_user_profile">UserProfile</string>
+    <string name="Tariff">Vyberte si tarif na míru:</string>
+    <string name="dummy_user">Jan Hoha</string>
+    <string name="dummy_tarif_left">zbývá 77 dní</string>
+    <string name="tariff_name_basic">Základní</string>
+    <string name="tariff_name_adv">Pokročilý</string>
+    <string name="tariff_name_pro">Profesionální</string>
 
 </resources>

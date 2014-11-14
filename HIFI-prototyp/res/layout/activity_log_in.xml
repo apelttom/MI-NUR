@@ -16,7 +16,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="@string/login_username_hint" />
+        android:hint="@string/username_hint" />
 
     <EditText
         android:id="@+id/editText_login_passw"
@@ -26,7 +26,7 @@
         android:layout_below="@+id/editText_login_username"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="@string/login_passw_hint"
+        android:hint="@string/passw_hint"
         android:inputType="textPassword" >
 
         <requestFocus />
@@ -47,7 +47,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText_login_passw"
         android:layout_centerHorizontal="true"
-        android:text="@string/login_button_passw_reset_title" />
+        android:text="@string/passw_reset_question"
+        android:onClick="displayPasswReset" />
 
     <Button
         android:id="@+id/button_login"
