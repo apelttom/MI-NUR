@@ -20,5 +20,8 @@
     <string name="tariff_name_basic">Základní</string>
     <string name="tariff_name_adv">Pokročilý</string>
     <string name="tariff_name_pro">Profesionální</string>
+    <string name="title_activity_poker_table">PokerTable</string>
+    <string name="dummy_win_1">Výhra: 47.8%</string>
+    <string name="dummy_win_2">Výhra: 52.2%</string>
 
 </resources>

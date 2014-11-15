@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="21"
         android:targetSdkVersion="21" />
 
     <application
@@ -29,6 +29,10 @@
         <activity
             android:name=".UserProfile"
             android:label="@string/title_activity_user_profile" >
+        </activity>
+        <activity
+            android:name=".PokerTable"
+            android:label="@string/title_activity_poker_table" >
         </activity>
     </application>
 
