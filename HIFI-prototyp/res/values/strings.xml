@@ -23,5 +23,24 @@
     <string name="title_activity_poker_table">PokerTable</string>
     <string name="dummy_win_1">Výhra: 47.8%</string>
     <string name="dummy_win_2">Výhra: 52.2%</string>
+    <string name="register_name">name:</string>
+    <string name="register_email">e-mail:</string>
+    <string name="register_birthday">birthday:</string>
+    <string name="register_birthday_hint">01/01/1989</string>
+    <string name="register_password">password:</string>
+    <string name="register_password_dummy">weak</string>
+    <string name="register_password_again">password again:</string>
+    <string name="register_button">Register</string>
+    <string name="register_terms">I\'ve red and accepted terms and conditions...</string>
+    <string name="register_title">Registration</string>
+    <string name="feedback_title">Report an error</string>
+    <string name="feedback_button">Send</string>
+    <string-array name="feedback_options">
+        <item >error</item>
+        <item >problem</item>
+        <item >bug</item>
+        <item >just Hi</item>
+    </string-array>
+    <string name="feedback_message_hint">message</string>
 
 </resources>

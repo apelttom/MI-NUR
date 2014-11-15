@@ -9,21 +9,21 @@
     tools:context="com.example.hifi_prototyp.LogIn" >
 
     <EditText
-        android:id="@+id/editText_login_username"
+        android:id="@+id/editText_register_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView_login_title"
+        android:layout_below="@+id/textView_register_title"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/username_hint" />
 
     <EditText
-        android:id="@+id/editText_login_passw"
+        android:id="@+id/editText_register_passw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText_login_username"
-        android:layout_below="@+id/editText_login_username"
+        android:layout_alignLeft="@+id/editText_register_username"
+        android:layout_below="@+id/editText_register_username"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/passw_hint"
@@ -33,7 +33,7 @@
     </EditText>
 
     <TextView
-        android:id="@+id/textView_login_title"
+        android:id="@+id/textView_register_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -45,13 +45,13 @@
         android:id="@+id/button_login_passw_reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText_login_passw"
+        android:layout_below="@+id/editText_register_passw"
         android:layout_centerHorizontal="true"
         android:text="@string/passw_reset_question"
         android:onClick="displayPasswReset" />
 
     <Button
-        android:id="@+id/button_login"
+        android:id="@+id/button_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/button_login_passw_reset"

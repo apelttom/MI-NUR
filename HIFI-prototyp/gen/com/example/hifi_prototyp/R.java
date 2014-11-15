@@ -16,6 +16,9 @@ public final class R {
         public static final int abc_slide_out_bottom=0x7f040004;
         public static final int abc_slide_out_top=0x7f040005;
     }
+    public static final class array {
+        public static final int feedback_options=0x7f0c0000;
+    }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -1656,18 +1659,20 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f090030;
         public static final int action_mode_bar_stub=0x7f09002f;
         public static final int action_mode_close_button=0x7f090022;
-        public static final int action_settings=0x7f09005f;
+        public static final int action_settings=0x7f090067;
         public static final int activity_chooser_view_content=0x7f090023;
         public static final int always=0x7f090014;
         public static final int beginning=0x7f09001b;
         public static final int bottom=0x7f09001e;
-        public static final int button_back=0x7f09004a;
-        public static final int button_login=0x7f090045;
-        public static final int button_login_passw_reset=0x7f090044;
-        public static final int button_passres_reset=0x7f090049;
-        public static final int button_tariff_advanced=0x7f09005a;
-        public static final int button_tariff_basic=0x7f090058;
-        public static final int button_tariff_pro=0x7f090059;
+        public static final int button1=0x7f09005c;
+        public static final int button_back=0x7f09004d;
+        public static final int button_login_passw_reset=0x7f090047;
+        public static final int button_passres_reset=0x7f09004c;
+        public static final int button_register=0x7f090048;
+        public static final int button_tariff_advanced=0x7f090062;
+        public static final int button_tariff_basic=0x7f090060;
+        public static final int button_tariff_pro=0x7f090061;
+        public static final int checkBox_register_terms=0x7f09005a;
         public static final int checkbox=0x7f09002b;
         public static final int collapseActionView=0x7f090015;
         public static final int decor_content_parent=0x7f090031;
@@ -1675,10 +1680,15 @@ containing a value of this type.
         public static final int dialog=0x7f090019;
         public static final int disableHome=0x7f09000d;
         public static final int dropdown=0x7f09001a;
-        public static final int editText_login_passw=0x7f090043;
-        public static final int editText_login_username=0x7f090041;
-        public static final int editText_passres_email=0x7f090048;
-        public static final int editText_passres_username=0x7f090047;
+        public static final int editText_feedback_message=0x7f090043;
+        public static final int editText_feedback_title=0x7f090041;
+        public static final int editText_passres_email=0x7f09004b;
+        public static final int editText_passres_username=0x7f09004a;
+        public static final int editText_register_birthday=0x7f09005e;
+        public static final int editText_register_email=0x7f09005d;
+        public static final int editText_register_passw=0x7f090046;
+        public static final int editText_register_password_again=0x7f09005b;
+        public static final int editText_register_username=0x7f090044;
         public static final int edit_query=0x7f090035;
         public static final int end=0x7f09001c;
         public static final int expand_activities_button=0x7f090024;
@@ -1688,24 +1698,24 @@ containing a value of this type.
         public static final int icon=0x7f090028;
         public static final int ifRoom=0x7f090016;
         public static final int image=0x7f090025;
-        public static final int imageButton_card_flop_1=0x7f09004f;
-        public static final int imageButton_card_flop_2=0x7f09004d;
-        public static final int imageButton_card_flop_3=0x7f090050;
-        public static final int imageButton_card_myCard_1=0x7f09004c;
-        public static final int imageButton_card_myCard_2=0x7f09004e;
-        public static final int imageButton_card_opponent_1=0x7f090053;
-        public static final int imageButton_card_opponent_2=0x7f090054;
-        public static final int imageButton_card_river=0x7f090052;
-        public static final int imageButton_card_turn=0x7f090051;
-        public static final int imageButton_help=0x7f09004b;
-        public static final int imageView_user_picture=0x7f09005b;
+        public static final int imageButton_card_flop_1=0x7f090052;
+        public static final int imageButton_card_flop_2=0x7f090050;
+        public static final int imageButton_card_flop_3=0x7f090053;
+        public static final int imageButton_card_myCard_1=0x7f09004f;
+        public static final int imageButton_card_myCard_2=0x7f090051;
+        public static final int imageButton_card_opponent_1=0x7f090056;
+        public static final int imageButton_card_opponent_2=0x7f090057;
+        public static final int imageButton_card_river=0x7f090055;
+        public static final int imageButton_card_turn=0x7f090054;
+        public static final int imageButton_help=0x7f09004e;
+        public static final int imageView_user_picture=0x7f090063;
         public static final int listMode=0x7f09000a;
         public static final int list_item=0x7f090027;
         public static final int middle=0x7f09001d;
         public static final int never=0x7f090017;
         public static final int none=0x7f09000f;
         public static final int normal=0x7f09000b;
-        public static final int progressBar_tariff=0x7f09005c;
+        public static final int progressBar_tariff=0x7f090064;
         public static final int progress_circular=0x7f090007;
         public static final int progress_horizontal=0x7f090008;
         public static final int radio=0x7f09002d;
@@ -1723,16 +1733,17 @@ containing a value of this type.
         public static final int showCustom=0x7f090010;
         public static final int showHome=0x7f090011;
         public static final int showTitle=0x7f090012;
+        public static final int spinner_feedback_type=0x7f090042;
         public static final int split_action_bar=0x7f090004;
         public static final int submit_area=0x7f09003e;
         public static final int tabMode=0x7f09000c;
-        public static final int textView_login_title=0x7f090042;
-        public static final int textView_passres_title=0x7f090046;
-        public static final int textView_tariff_left=0x7f09005e;
-        public static final int textView_user_prof_title=0x7f090057;
-        public static final int textView_username=0x7f09005d;
-        public static final int textView_win_prob_1=0x7f090056;
-        public static final int textView_win_prob_2=0x7f090055;
+        public static final int textView_passres_title=0x7f090049;
+        public static final int textView_register_title=0x7f090045;
+        public static final int textView_tariff_left=0x7f090066;
+        public static final int textView_user_prof_title=0x7f09005f;
+        public static final int textView_username=0x7f090065;
+        public static final int textView_win_prob_1=0x7f090058;
+        public static final int textView_win_prob_2=0x7f090059;
         public static final int title=0x7f090029;
         public static final int top=0x7f09001f;
         public static final int up=0x7f090001;
@@ -1789,14 +1800,16 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f030014;
         public static final int abc_search_view=0x7f030015;
         public static final int abc_simple_dropdown_hint=0x7f030016;
-        public static final int activity_log_in=0x7f030017;
-        public static final int activity_password_reset=0x7f030018;
-        public static final int activity_poker_table=0x7f030019;
-        public static final int activity_user_profile=0x7f03001a;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
+        public static final int activity_feedback=0x7f030017;
+        public static final int activity_log_in=0x7f030018;
+        public static final int activity_password_reset=0x7f030019;
+        public static final int activity_poker_table=0x7f03001a;
+        public static final int activity_register=0x7f03001b;
+        public static final int activity_user_profile=0x7f03001c;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
     }
     public static final class menu {
-        public static final int log_in=0x7f0c0000;
+        public static final int log_in=0x7f0d0000;
     }
     public static final class string {
         public static final int Tariff=0x7f0a001c;
@@ -1862,10 +1875,23 @@ containing a value of this type.
         public static final int dummy_win_1=0x7f0a0023;
         public static final int dummy_win_2=0x7f0a0024;
         public static final int email_hint=0x7f0a0018;
+        public static final int feedback_button=0x7f0a0030;
+        public static final int feedback_message_hint=0x7f0a0031;
+        public static final int feedback_title=0x7f0a002f;
         public static final int hello_world=0x7f0a0010;
         public static final int login_button_title=0x7f0a0016;
         public static final int passw_hint=0x7f0a0014;
         public static final int passw_reset_question=0x7f0a0015;
+        public static final int register_birthday=0x7f0a0027;
+        public static final int register_birthday_hint=0x7f0a0028;
+        public static final int register_button=0x7f0a002c;
+        public static final int register_email=0x7f0a0026;
+        public static final int register_name=0x7f0a0025;
+        public static final int register_password=0x7f0a0029;
+        public static final int register_password_again=0x7f0a002b;
+        public static final int register_password_dummy=0x7f0a002a;
+        public static final int register_terms=0x7f0a002d;
+        public static final int register_title=0x7f0a002e;
         public static final int reset=0x7f0a0019;
         public static final int tariff_name_adv=0x7f0a0020;
         public static final int tariff_name_basic=0x7f0a001f;
