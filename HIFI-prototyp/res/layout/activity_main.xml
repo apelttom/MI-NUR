@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <!-- Components with already defined styles -->
+
+    <Button
+        android:id="@+id/button_back"
+        style="@style/button_back" />
+
+    <ImageButton
+        android:id="@+id/imageButton_help"
+        style="@style/button_help" />
+
+    <!-- ========================================= -->
+
+    <TextView
+        android:id="@+id/textView_user_prof_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/application_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_tariff"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_username"
+        android:layout_alignRight="@+id/textView_username"
+        android:layout_alignTop="@+id/textView_username"
+        android:layout_marginTop="17dp"
+        android:max="100"
+        android:progress="33" />
+
+    <ImageView
+        android:id="@+id/imageView_user_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/button_back"
+        android:layout_below="@+id/imageButton_help"
+        android:src="@drawable/user_picture" />
+
+    <TextView
+        android:id="@+id/textView_tariff_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/progressBar_tariff"
+        android:layout_below="@+id/progressBar_tariff"
+        android:text="@string/dummy_tarif_left"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/button_main_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_main_play"
+        android:layout_alignRight="@+id/button_main_play"
+        android:layout_below="@+id/button_main_play"
+        android:text="@string/main_profile" />
+
+    <Button
+        android:id="@+id/button_main_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_main_profile"
+        android:layout_alignRight="@+id/button_main_profile"
+        android:layout_below="@+id/button_main_profile"
+        android:text="@string/main_help" />
+
+    <TextView
+        android:id="@+id/textView_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_back"
+        android:layout_below="@+id/imageView_user_picture"
+        android:layout_marginTop="18dp"
+        android:drawableLeft="@drawable/stars_main"
+        android:gravity="right|center_vertical"
+        android:text="@string/dummy_user"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/button_main_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_user_prof_title"
+        android:layout_alignRight="@+id/textView_user_prof_title"
+        android:layout_below="@+id/textView_user_prof_title"
+        android:text="@string/main_play" />
+
+</RelativeLayout>

@@ -42,5 +42,8 @@
         <item >just Hi</item>
     </string-array>
     <string name="feedback_message_hint">message</string>
+    <string name="main_play">HRAT</string>
+    <string name="main_profile">PROFIL</string>
+    <string name="main_help">NAPOVEDA</string>
 
 </resources>
