@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" 
+    android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -11,30 +11,45 @@
         android:id="@+id/editText_feedback_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/button_send"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/spinner_feedback_type"
+        android:layout_below="@+id/textView_title"
         android:ems="10"
         android:hint="@string/feedback_message_hint"
-        android:inputType="text" />
-
-    <EditText
-        android:id="@+id/editText_feedback_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:text="@string/feedback_title" />
+        android:inputType="textMultiLine" />
 
     <Spinner
         android:id="@+id/spinner_feedback_type"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/editText_feedback_title"
-        android:layout_toRightOf="@+id/editText_feedback_title"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button_back"
         android:entries="@array/feedback_options" />
+
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_back"
+        android:layout_alignBottom="@+id/button_back"
+        android:layout_alignRight="@+id/editText_feedback_message"
+        android:text="@string/feedback_button" />
+
+    <Button
+        android:id="@+id/button_back"
+        style="@style/button_back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/feedback_title"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

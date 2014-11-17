@@ -34,6 +34,14 @@
             android:name=".PokerTable"
             android:label="@string/title_activity_poker_table" >
         </activity>
+        <activity
+            android:name=".MyActivity"
+            android:label="@string/title_activity_my"
+            android:parentActivityName="android.app.TabActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.TabActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -56,6 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/button_login_passw_reset"
         android:layout_centerHorizontal="true"
+        android:onClick="clickLogIn"
         android:text="@string/login_button_title" />
 
 </RelativeLayout>

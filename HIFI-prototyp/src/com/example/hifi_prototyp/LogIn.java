@@ -37,7 +37,13 @@ public class LogIn extends ActionBarActivity {
 	/** Called when the user clicks the Password reset button */
 	public void displayPasswReset(View view) {
 		//TODO add context from login form = username
-//		Intent displayPasswResetForm = new Intent(this, PokerTable.class);
-//		startActivity(displayPasswResetForm);
+		Intent displayPasswResetForm = new Intent(this, PasswordReset.class);
+		startActivity(displayPasswResetForm);
+	}
+	
+	/** Called when the user clicks the Log In button */
+	public void clickLogIn(View view) {
+		Intent main = new Intent(this, MainMenu.class);
+		startActivity(main);
 	}
 }

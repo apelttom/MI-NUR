@@ -64,6 +64,7 @@
         android:layout_alignLeft="@+id/button_main_play"
         android:layout_alignRight="@+id/button_main_play"
         android:layout_below="@+id/button_main_play"
+        android:onClick="clickProfile"
         android:text="@string/main_profile" />
 
     <Button
@@ -73,6 +74,7 @@
         android:layout_alignLeft="@+id/button_main_profile"
         android:layout_alignRight="@+id/button_main_profile"
         android:layout_below="@+id/button_main_profile"
+        android:onClick="clickHelp"
         android:text="@string/main_help" />
 
     <TextView
@@ -94,6 +96,7 @@
         android:layout_alignLeft="@+id/textView_user_prof_title"
         android:layout_alignRight="@+id/textView_user_prof_title"
         android:layout_below="@+id/textView_user_prof_title"
+        android:onClick="clickPlay"
         android:text="@string/main_play" />
 
 </RelativeLayout>
