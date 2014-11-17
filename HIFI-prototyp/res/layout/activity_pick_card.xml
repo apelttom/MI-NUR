@@ -8,14 +8,24 @@
 
     <!-- ========================================= -->
 
-    <ImageButton
-        android:id="@+id/imageButton1"
+    <ImageView
+        android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentTop="true"
+        android:focusableInTouchMode="true"
         android:onClick="pickCard"
-        android:scaleType="centerInside"
+        android:scaleType="fitXY"
         android:src="@drawable/all_deck" />
+
+    <Button
+        android:id="@+id/button_main_play"
+        style="@style/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/back" />
 
 </RelativeLayout>

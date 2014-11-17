@@ -30,35 +30,40 @@
         android:id="@+id/imageButton_card_flop_1"
         style="@style/button_card_big"
         android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/button_back" />
+        android:layout_toRightOf="@+id/button_back"
+        android:onClick="pickFlop1" />
 
     <ImageButton
         android:id="@+id/imageButton_card_flop_2"
         style="@style/button_card_big"
         android:layout_alignTop="@+id/imageButton_card_flop_1"
         android:layout_marginLeft="15dp"
-        android:layout_toRightOf="@+id/imageButton_card_flop_1" />
+        android:layout_toRightOf="@+id/imageButton_card_flop_1"
+        android:onClick="pickFlop2" />
     
     <ImageButton
         android:id="@+id/imageButton_card_flop_3"
         style="@style/button_card_big"
         android:layout_alignTop="@+id/imageButton_card_flop_2"
         android:layout_marginLeft="15dp"
-        android:layout_toRightOf="@+id/imageButton_card_flop_2" />
+        android:layout_toRightOf="@+id/imageButton_card_flop_2"
+        android:onClick="pickFlop3" />
     
     <ImageButton
         android:id="@+id/imageButton_card_turn"
         style="@style/button_card_big"
         android:layout_alignTop="@+id/imageButton_card_flop_3"
         android:layout_marginLeft="35dp"
-        android:layout_toRightOf="@+id/imageButton_card_flop_3" />
+        android:layout_toRightOf="@+id/imageButton_card_flop_3"
+        android:onClick="pickTurn" />
     
     <ImageButton
         android:id="@+id/imageButton_card_river"
         style="@style/button_card_big"
         android:layout_alignTop="@+id/imageButton_card_turn"
         android:layout_marginLeft="15dp"
-        android:layout_toRightOf="@+id/imageButton_card_turn" />
+        android:layout_toRightOf="@+id/imageButton_card_turn"
+        android:onClick="pickRiver" />
 
     <ImageButton
         android:id="@+id/imageButton_card_opponent_1"
