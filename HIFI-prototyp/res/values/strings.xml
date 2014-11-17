@@ -33,17 +33,25 @@
     <string name="register_button">Register</string>
     <string name="register_terms">I\'ve red and accepted terms and conditions...</string>
     <string name="register_title">Registration</string>
-    <string name="feedback_title">Report an error</string>
+    <string name="feedback_title">Report:</string>
     <string name="feedback_button">Send</string>
+
     <string-array name="feedback_options">
-        <item >error</item>
-        <item >problem</item>
-        <item >bug</item>
-        <item >just Hi</item>
+        <item>error</item>
+        <item>problem</item>
+        <item>bug</item>
+        <item>just Hi</item>
     </string-array>
+
     <string name="feedback_message_hint">message</string>
     <string name="main_play">HRAT</string>
     <string name="main_profile">PROFIL</string>
     <string name="main_help">NAPOVEDA</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_feedback">Report error</string>
+    <string name="title_activity_my">MyActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
 
 </resources>

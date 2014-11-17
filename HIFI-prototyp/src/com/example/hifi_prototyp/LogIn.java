@@ -41,10 +41,9 @@ public class LogIn extends ActionBarActivity {
 		startActivity(displayPasswResetForm);
 	}
 	
-	/** Called when the user clicks the Login button */
-	public void displayMainMenu(View view) {
-		Intent displayPasswResetForm = new Intent(this, MainMenu.class);
-		startActivity(displayPasswResetForm);
+	/** Called when the user clicks the Log In button */
+	public void clickLogIn(View view) {
+		Intent main = new Intent(this, MainMenu.class);
+		startActivity(main);
 	}
-	
 }
