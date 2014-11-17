@@ -27,4 +27,10 @@ public class LogIn2 extends Activity {
 		Intent displayPasswResetForm = new Intent(this, MainMenu.class);
 		startActivity(displayPasswResetForm);
 	}
+	
+	/** Called when the user clicks the Login button */
+	public void displayRegistration(View view) {
+		Intent displayPasswResetForm = new Intent(this, RegisterUser.class);
+		startActivity(displayPasswResetForm);
+	}
 }

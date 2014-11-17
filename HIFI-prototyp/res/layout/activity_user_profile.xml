@@ -31,9 +31,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView_user_prof_title"
-        android:layout_alignRight="@+id/textView_user_prof_title"
         android:layout_below="@+id/textView_user_prof_title"
         android:layout_marginTop="24dp"
+        android:layout_toLeftOf="@+id/imageButton_help"
         android:drawableRight="@drawable/star"
         android:gravity="left|center_vertical"
         android:text="@string/tariff_name_basic" />

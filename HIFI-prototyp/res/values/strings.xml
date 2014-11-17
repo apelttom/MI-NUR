@@ -14,15 +14,15 @@
     <string name="reset">Reset</string>
     <string name="back">Back</string>
     <string name="title_activity_user_profile">UserProfile</string>
-    <string name="Tariff">Vyberte si tarif na míru:</string>
+    <string name="Tariff">Pick the best tariff:</string>
     <string name="dummy_user">Jan Hoha</string>
-    <string name="dummy_tarif_left">zbývá 77 dní</string>
-    <string name="tariff_name_basic">Základní</string>
-    <string name="tariff_name_adv">Pokročilý</string>
-    <string name="tariff_name_pro">Profesionální</string>
+    <string name="dummy_tarif_left">You have 77 days</string>
+    <string name="tariff_name_basic">Basic</string>
+    <string name="tariff_name_adv">Advanced</string>
+    <string name="tariff_name_pro">Proffessional</string>
     <string name="title_activity_poker_table">PokerTable</string>
-    <string name="dummy_win_1">Výhra: 47.8%</string>
-    <string name="dummy_win_2">Výhra: 52.2%</string>
+    <string name="dummy_win_1">Win: 47.8%</string>
+    <string name="dummy_win_2">Win: 52.2%</string>
     <string name="register_name">name:</string>
     <string name="register_email">e-mail:</string>
     <string name="register_birthday">birthday:</string>
@@ -44,12 +44,14 @@
     </string-array>
 
     <string name="feedback_message_hint">message</string>
-    <string name="main_play">HRAT</string>
-    <string name="main_profile">PROFIL</string>
-    <string name="main_help">NAPOVEDA</string>
+    <string name="main_play">PLAY</string>
+    <string name="main_profile">PROFILE</string>
+    <string name="main_help">HELP</string>
     <string name="title_activity_register">Register</string>
     <string name="title_activity_feedback">Report error</string>
     <string name="title_activity_my">MyActivity</string>
     <string name="title_activity_log_in2">LogIn2</string>
+    <string name="login_register">Register</string>
+    <string name="main_feedback">Feedback</string>
 
 </resources>

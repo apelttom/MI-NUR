@@ -42,6 +42,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="MainMenu"
+            android:label="Main" >
+        </activity>
+        <activity
+            android:name="Feedback"
+            android:label="Feedback" >
+        </activity>
+        <activity
+            android:name="PickCard"
+            android:label="PickCard" >
+        </activity>
+        <activity
+            android:name="RegisterUser"
+            android:label="User registration" >
+        </activity>
     </application>
 
 </manifest>

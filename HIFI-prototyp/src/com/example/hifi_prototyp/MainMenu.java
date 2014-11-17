@@ -32,4 +32,10 @@ public class MainMenu extends Activity {
 	public void closeActivity(View view) {
 		finish();
 	}
+	
+	/** Called when the user clicks the Back reset button */
+	public void clickFeedback(View view) {
+		Intent feedback = new Intent(this, Feedback.class);
+		startActivity(feedback);
+	}
 }
