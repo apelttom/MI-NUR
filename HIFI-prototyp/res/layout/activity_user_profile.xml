@@ -11,7 +11,8 @@
     
     <ImageButton
         android:id="@+id/imageButton_help"
-        style="@style/button_help" />
+        style="@style/button_help"
+        android:onClick="displayHelp" />
     
 <!--	========================================= -->
 
@@ -70,15 +71,6 @@
         android:max="100"
         android:progress="33" />
 
-    <TextView
-        android:id="@+id/textView_username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageView_user_picture"
-        android:layout_below="@+id/imageView_user_picture"
-        android:text="@string/dummy_user"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
     <Button
         android:id="@+id/button_tariff_advanced"
         android:layout_width="wrap_content"
@@ -100,5 +92,16 @@
         android:text="@string/dummy_tarif_left"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/progressBar_tariff"
+        android:layout_alignTop="@+id/button_tariff_basic"
+        android:drawableLeft="@drawable/stars_main"
+        android:gravity="right|center_vertical"
+        android:text="@string/dummy_user"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
     
 </RelativeLayout>

@@ -20,7 +20,7 @@
         <activity
             android:name=".UserProfile"
             android:label="@string/title_activity_user_profile" >
-        </activity>
+        </activity>title_activity_log_in2
         <activity
             android:name=".PokerTable"
             android:label="@string/title_activity_poker_table" >
@@ -35,7 +35,7 @@
         </activity>
         <activity
             android:name=".LogIn2"
-            android:label="@string/title_activity_log_in2" >
+            android:label="@string/application_title" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -43,20 +43,24 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="MainMenu"
+            android:name=".MainMenu"
             android:label="Main" >
         </activity>
         <activity
-            android:name="Feedback"
+            android:name=".Feedback"
             android:label="Feedback" >
         </activity>
         <activity
-            android:name="PickCard"
+            android:name=".PickCard"
             android:label="PickCard" >
         </activity>
         <activity
-            android:name="RegisterUser"
+            android:name=".RegisterUser"
             android:label="User registration" >
+        </activity>
+        <activity
+            android:name=".Help"
+            android:label="@string/title_activity_help" >
         </activity>
     </application>
 

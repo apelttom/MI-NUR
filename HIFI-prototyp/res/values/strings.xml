@@ -31,7 +31,7 @@
     <string name="register_password_dummy">weak</string>
     <string name="register_password_again">password again:</string>
     <string name="register_button">Register</string>
-    <string name="register_terms">I\'ve red and accepted terms and conditions...</string>
+    <string name="register_terms">I\'ve read and accepted terms and conditions...</string>
     <string name="register_title">Registration</string>
     <string name="feedback_title">Report:</string>
     <string name="feedback_button">Send</string>
@@ -53,5 +53,43 @@
     <string name="title_activity_log_in2">LogIn2</string>
     <string name="login_register">Register</string>
     <string name="main_feedback">Feedback</string>
-
+    <string name="title_activity_help">Help</string>
+    <string name="dashboard_help">
+    Main screen:
+        You can see your profile and the amount of days, you still have until
+        your tariff will expire. Also you can choose to start a poker table
+        simulation by clicking on the "Play" button. You can also change your
+        profile and your tariff by clicking on the "Profile" button. You can
+        browse instructions how to use PokerKing application by clicking on
+        "Help" button. If you encounter an error, or if you wish to provide us
+        feedback use the "Feedback" button. By clicking on the "Back" button
+        you may return to the login screen.
+    </string>
+    <string name="table_help">
+	 Poker table screen:
+    	Here you can simulate a real Texas Holdem match, and our application
+    	will calculate the odds for you! If you wish to attach a specific card
+    	to your hand or on the table, simply click on the card and card
+    	selection screen will appear. The calculated probabilities of win are
+    	shown immediately on the screen. By clicking on the "Back" button you
+    	may return to the title screen.  
+    </string>
+    <string name="user_profile_help">
+	 User profile screen:
+	 	You can see your profile picture and username here as well as amount
+	 	of the days	you still have left to use current cloud computation power.
+	 	If you wish to lower or increase the computation power used when
+	 	calculating your simulations, you can pick different tarif. Basic tariff
+	 	ofers you simple computation power of the fourth core processor.
+	 	Advanced tariff provides you with stronger and much faster power of
+	 	two four core processors. Finally Proffessional tariff gives you the
+	 	massive amount of 5 four core processor power which calculates your
+	 	simulations in a blink of an eye.
+    </string>
+     <string name="feedback_help">
+	 Feedback screen:
+    	This screen provides you an option to help us improve Poker King
+    	application by sending us your opinions or advices. Also you can report
+    	any error you will encounter during usage of Poker King application. 
+    </string>
 </resources>

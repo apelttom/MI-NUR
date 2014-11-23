@@ -11,7 +11,8 @@
 
     <ImageButton
         android:id="@+id/imageButton_help"
-        style="@style/button_help" />
+        style="@style/button_help"
+        android:onClick="displayHelp" />
 
     <ImageButton
         android:id="@+id/imageButton_card_myCard_1"

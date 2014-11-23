@@ -47,6 +47,12 @@ public class PokerTable extends Activity {
 	public void closeActivity(View view) {
 		finish();
 	}
+	
+	/** Called when the user clicks the Help reset button */
+	public void displayHelp(View view) {
+		Intent displayHelp = new Intent(this, Help.class);
+		startActivity(displayHelp);
+	}
 
 	public static void setCard(String card) {
 		if (active != null) {

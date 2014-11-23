@@ -28,14 +28,20 @@ public class MainMenu extends Activity {
 //		startActivity(main);
 	}
 	
-	/** Called when the user clicks the Back reset button */
+	/** Called when the user clicks the Back button */
 	public void closeActivity(View view) {
 		finish();
 	}
 	
-	/** Called when the user clicks the Back reset button */
+	/** Called when the user clicks the Feedback button */
 	public void clickFeedback(View view) {
 		Intent feedback = new Intent(this, Feedback.class);
 		startActivity(feedback);
+	}
+	
+	/** Called when the user clicks the Help button */
+	public void displayHelp(View view) {
+		Intent displayHelp = new Intent(this, Help.class);
+		startActivity(displayHelp);
 	}
 }
