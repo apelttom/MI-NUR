@@ -18,7 +18,7 @@ public class PickCard extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_pick_card);
 		
-		ImageView img = (ImageView)findViewById(R.id.imageView1);
+		ImageView img = (ImageView)findViewById(R.id.card_wheel);
 		img.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -54,7 +54,7 @@ public class PickCard extends Activity {
 	    case 12: card = card+"1"; break;
 	    default: card = card + String.valueOf(clickX+2);
 	    }
-	    PokerTable.setCard(card);
+//	    PokerTable.setCard(card);
 	    Log.d("pick card", "picked "+card);
 	    finish();
 	}

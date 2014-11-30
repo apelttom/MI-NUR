@@ -24,7 +24,6 @@
         android:ems="10"
         android:hint="@string/passw_hint"
         android:inputType="textPassword" >
-
         <requestFocus />
     </EditText>
 
@@ -52,9 +51,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/button_login_passw_reset"
         android:layout_centerHorizontal="true"
-        android:text="@string/login_button_title"
-        android:background="#008000"
-        android:onClick="displayMainMenu" />
+        android:background="@drawable/green_button"
+        android:onClick="displayMainMenu"
+        android:text="@string/login_button_title" />
 
     <Button
         android:id="@+id/button_reg"

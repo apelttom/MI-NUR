@@ -9,38 +9,32 @@ import android.widget.ImageButton;
 
 public class PokerTable extends Activity {
 	
-	private static ImageButton active = null;
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_poker_table);
 	}
 	
+	@Override
+	public void onWindowFocusChanged(boolean hasFocus) {
+		super.onWindowFocusChanged(hasFocus);
+		setCards();
+	}
+
 	public void pickFlop1(View view) {
-		Intent displayPasswResetForm = new Intent(this, PickCard.class);
-		startActivity(displayPasswResetForm);
-		active = (ImageButton)findViewById(R.id.imageButton_card_flop_1);
+		goToWheel();
 	}
 	public void pickFlop2(View view) {
-		Intent displayPasswResetForm = new Intent(this, PickCard.class);
-		startActivity(displayPasswResetForm);
-		active = (ImageButton)findViewById(R.id.imageButton_card_flop_2);
+		goToWheel();
 	}
 	public void pickFlop3(View view) {
-		Intent displayPasswResetForm = new Intent(this, PickCard.class);
-		startActivity(displayPasswResetForm);
-		active = (ImageButton)findViewById(R.id.imageButton_card_flop_3);
+		goToWheel();
 	}
 	public void pickTurn(View view) {
-		Intent displayPasswResetForm = new Intent(this, PickCard.class);
-		startActivity(displayPasswResetForm);
-		active = (ImageButton)findViewById(R.id.imageButton_card_turn);
+		goToWheel();
 	}
 	public void pickRiver(View view) {
-		Intent displayPasswResetForm = new Intent(this, PickCard.class);
-		startActivity(displayPasswResetForm);
-		active = (ImageButton)findViewById(R.id.imageButton_card_river);
+		goToWheel();
 	}
 	
 	/** Called when the user clicks the Back reset button */
@@ -54,10 +48,28 @@ public class PokerTable extends Activity {
 		startActivity(displayHelp);
 	}
 
-	public static void setCard(String card) {
-		if (active != null) {
-			active.setImageURI(Uri.parse("android.resource://com.example.hifi_prototyp/drawable//"+card));
-			active = null;
+	private void setCards() {
+		setCard(R.id.imageButton_card_flop_1);
+		setCard(R.id.imageButton_card_flop_2);
+		setCard(R.id.imageButton_card_flop_3);
+		setCard(R.id.imageButton_card_turn);
+		setCard(R.id.imageButton_card_river);
+	}
+	
+	private void setCard(int id) {
+		ImageButton img = (ImageButton)findViewById(id);
+		String card;
+		if (PickCardWheel.getCardsOnTable().containsKey(id)) {
+			int[] indexes = PickCardWheel.getCardsOnTable().get(id);
+			card = (indexes == null) ? "card_undef_big" : CardUtils.getCard(indexes[0], indexes[1]);
+		} else {
+			card = "card_undef_big";
 		}
+		img.setImageURI(Uri.parse("android.resource://com.example.hifi_prototyp/drawable//"+card));
+	}
+	
+	private void goToWheel() {
+		Intent displayPasswResetForm = new Intent(this, PickCardWheel.class);
+		startActivity(displayPasswResetForm);
 	}
 }

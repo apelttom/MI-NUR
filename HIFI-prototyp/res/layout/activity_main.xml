@@ -12,23 +12,12 @@
 
     <!-- ========================================= -->
 
-    <TextView
-        android:id="@+id/textView_user_prof_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginRight="70dp"
-        android:layout_marginTop="40dp"
-        android:text="@string/application_title"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
     <ProgressBar
         android:id="@+id/progressBar_tariff"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView_username"
+        android:layout_alignLeft="@+id/image_stars_main"
         android:layout_alignRight="@+id/textView_username"
         android:layout_alignTop="@+id/textView_username"
         android:layout_marginTop="17dp"
@@ -64,28 +53,6 @@
         android:layout_below="@+id/button_main_profile"
         android:onClick="displayHelp"
         android:text="@string/main_help" />
-
-    <TextView
-        android:id="@+id/textView_username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button_back"
-        android:layout_below="@+id/imageView_user_picture"
-        android:layout_marginTop="18dp"
-        android:drawableLeft="@drawable/stars_main"
-        android:gravity="right|center_vertical"
-        android:text="@string/dummy_user"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <Button
-        android:id="@+id/button_main_play"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView_user_prof_title"
-        android:layout_alignRight="@+id/textView_user_prof_title"
-        android:layout_below="@+id/textView_user_prof_title"
-        android:onClick="clickPlay"
-        android:text="@string/main_play" />
     
      <Button
         android:id="@+id/button_feedback"
@@ -104,5 +71,49 @@
          android:layout_alignRight="@+id/button_back"
          android:layout_alignTop="@+id/textView_user_prof_title"
          android:src="@drawable/user_picture" />
+
+     <TextView
+         android:id="@+id/textView_user_prof_title"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginRight="99dp"
+         android:layout_marginTop="20dp"
+         android:text="@string/application_title"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textSize="32sp" />
+
+     <TextView
+         android:id="@+id/textView_username"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/image_stars_main"
+         android:layout_marginLeft="22dp"
+         android:layout_toRightOf="@+id/image_stars_main"
+         android:gravity="right|center_vertical"
+         android:text="@string/dummy_user"
+         android:textAppearance="?android:attr/textAppearanceSmall" />
+
+     <ImageView
+         android:id="@+id/image_stars_main"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/button_back"
+         android:layout_below="@+id/imageView_user_picture"
+         android:layout_marginTop="20dp"
+         android:src="@drawable/stars_main" />
+
+     <Button
+         android:id="@+id/button_main_play"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:layout_alignLeft="@+id/textView_user_prof_title"
+         android:layout_alignRight="@+id/textView_user_prof_title"
+         android:layout_below="@+id/textView_user_prof_title"
+         android:background="@drawable/green_button"
+         android:onClick="clickPlay"
+         android:text="@string/main_play" />
 
 </RelativeLayout>

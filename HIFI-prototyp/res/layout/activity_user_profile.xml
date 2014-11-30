@@ -4,17 +4,18 @@
     android:layout_height="match_parent"
     tools:context="${relativePackage}.${activityClass}" >
 
-<!--     Components with already defined styles -->
+    <!-- Components with already defined styles -->
+
     <Button
         android:id="@+id/button_back"
         style="@style/button_back" />
-    
+
     <ImageButton
         android:id="@+id/imageButton_help"
         style="@style/button_help"
         android:onClick="displayHelp" />
-    
-<!--	========================================= -->
+
+    <!-- ========================================= -->
 
     <TextView
         android:id="@+id/textView_user_prof_title"
@@ -40,68 +41,77 @@
         android:text="@string/tariff_name_basic" />
 
     <Button
+        android:id="@+id/button_tariff_advanced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_tariff_basic"
+        android:layout_below="@+id/button_tariff_basic"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/imageButton_help"
+        android:drawableRight="@drawable/stars2"
+        android:gravity="left|center_vertical"
+        android:text="@string/tariff_name_adv" />
+
+    <Button
         android:id="@+id/button_tariff_pro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button_back"
-        android:layout_alignBottom="@+id/button_back"
         android:layout_alignLeft="@+id/button_tariff_advanced"
-        android:layout_alignRight="@+id/button_tariff_advanced"
+        android:layout_below="@+id/button_tariff_advanced"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/imageButton_help"
         android:drawableRight="@drawable/stars3"
         android:gravity="left|center_vertical"
         android:text="@string/tariff_name_pro" />
-
-    <ImageView
-        android:id="@+id/imageView_user_picture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="40dp"
-        android:src="@drawable/user_picture" />
-
+    
     <ProgressBar
         android:id="@+id/progressBar_tariff"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button_back"
-        android:layout_alignRight="@+id/button_back"
-        android:layout_alignTop="@+id/button_tariff_basic"
-        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@+id/image_stars_main"
+        android:layout_alignRight="@+id/textView_username"
+        android:layout_alignTop="@+id/textView_username"
+        android:layout_marginTop="17dp"
         android:max="100"
         android:progress="33" />
-
-    <Button
-        android:id="@+id/button_tariff_advanced"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button_tariff_pro"
-        android:layout_alignLeft="@+id/button_tariff_basic"
-        android:layout_alignRight="@+id/button_tariff_basic"
-        android:layout_marginBottom="16dp"
-        android:drawableRight="@drawable/stars2"
-        android:gravity="left|center_vertical"
-        android:text="@string/tariff_name_adv" />
 
     <TextView
         android:id="@+id/textView_tariff_left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button_tariff_basic"
-        android:layout_alignRight="@+id/textView_username"
+        android:layout_alignRight="@+id/progressBar_tariff"
+        android:layout_below="@+id/progressBar_tariff"
         android:text="@string/dummy_tarif_left"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textSize="10sp" />
-
-    <TextView
-        android:id="@+id/textView_username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/progressBar_tariff"
-        android:layout_alignTop="@+id/button_tariff_basic"
-        android:drawableLeft="@drawable/stars_main"
-        android:gravity="right|center_vertical"
-        android:text="@string/dummy_user"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
     
+    <ImageView
+         android:id="@+id/imageView_user_picture"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignRight="@+id/button_back"
+         android:layout_alignTop="@+id/textView_user_prof_title"
+         android:src="@drawable/user_picture" />
+    
+    <TextView
+         android:id="@+id/textView_username"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/image_stars_main"
+         android:layout_marginLeft="22dp"
+         android:layout_toRightOf="@+id/image_stars_main"
+         android:gravity="right|center_vertical"
+         android:text="@string/dummy_user"
+         android:textAppearance="?android:attr/textAppearanceSmall" />
+
+     <ImageView
+         android:id="@+id/image_stars_main"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/button_back"
+         android:layout_below="@+id/imageView_user_picture"
+         android:layout_marginTop="20dp"
+         android:src="@drawable/stars_main" />
+
 </RelativeLayout>
