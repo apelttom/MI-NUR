@@ -42,6 +42,7 @@ public class PickCardWheel extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_pick_card_wheel);
+		activeId = R.id.imageButton_card_flop_1;
 		cardButtons.add(R.id.imageButton_card_flop_1);
 		cardButtons.add(R.id.imageButton_card_flop_2);
 		cardButtons.add(R.id.imageButton_card_flop_3);
@@ -165,9 +166,7 @@ public class PickCardWheel extends Activity {
 		isValue = false;
 		selectedKind = -1;
 		selectedValue = -1;
-		if (activeId != null) {
-			paintSelect();
-		}
+		paintSelect();
 	}
 	
 	private void resetCard() {
