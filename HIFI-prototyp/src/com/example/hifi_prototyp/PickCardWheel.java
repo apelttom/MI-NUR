@@ -6,10 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import android.app.Activity;
-import android.content.res.Resources;
 import android.graphics.PorterDuff;
-import android.graphics.drawable.Drawable;
-import android.graphics.drawable.LayerDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -20,6 +17,8 @@ import android.widget.ImageView;
 
 public class PickCardWheel extends Activity {
 
+	public static boolean myCards;
+	public static int cardFrom;
 	private int cx, cy, inner, border;
 	private double angle, distance;
 	private final double section = 360.0 / 14;
@@ -27,7 +26,9 @@ public class PickCardWheel extends Activity {
 	private int selectedKind = -1, selectedValue = -1;
 	private Integer activeId;
 	
-	private List<Integer> cardButtons = new ArrayList<Integer>();
+	private List<Integer> cardButtons;
+	private List<Integer> cardButtonsTable = new ArrayList<Integer>();
+	private List<Integer> cardButtonsHand = new ArrayList<Integer>();
 	private static Map<Integer, int[]> placedCards = new HashMap<>();
 	private static Map<String, List<Integer>> unavailableCards;
 	static {
@@ -42,12 +43,14 @@ public class PickCardWheel extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_pick_card_wheel);
-		activeId = R.id.imageButton_card_flop_1;
-		cardButtons.add(R.id.imageButton_card_flop_1);
-		cardButtons.add(R.id.imageButton_card_flop_2);
-		cardButtons.add(R.id.imageButton_card_flop_3);
-		cardButtons.add(R.id.imageButton_card_turn);
-		cardButtons.add(R.id.imageButton_card_river);
+		activeId = cardFrom == 0 ? R.id.imageButton_card_flop_1 : cardFrom;
+		cardButtonsTable.add(R.id.imageButton_card_flop_1);
+		cardButtonsTable.add(R.id.imageButton_card_flop_2);
+		cardButtonsTable.add(R.id.imageButton_card_flop_3);
+		cardButtonsTable.add(R.id.imageButton_card_turn);
+		cardButtonsTable.add(R.id.imageButton_card_river);
+		cardButtonsHand.add(R.id.imageButton_card_myCard_1);
+		cardButtonsHand.add(R.id.imageButton_card_myCard_2);
 		
 		ImageView img = (ImageView)findViewById(R.id.card_wheel);
 		img.setOnTouchListener(new View.OnTouchListener() {
@@ -80,7 +83,7 @@ public class PickCardWheel extends Activity {
 			//inner
 			int index = (int)(angle/90);
 			if (isValue) {
-				if (unavailableCards.get(CardUtils.getKind(index)).contains(new Integer(selectedValue))) {
+				if (unavailableCards.get(CardUtils.getKind(index)).contains(Integer.valueOf(selectedValue))) {
 					//card already used
 					resetSelect();
 					System.out.println("already selected "+CardUtils.getCard(index, selectedValue));
@@ -104,7 +107,7 @@ public class PickCardWheel extends Activity {
 					return;
 				}
 				if (isKind) {
-					if (unavailableCards.get(CardUtils.getKind(selectedKind)).contains(new Integer(index))) {
+					if (unavailableCards.get(CardUtils.getKind(selectedKind)).contains(Integer.valueOf(index))) {
 						//card already used
 						resetSelect();
 						System.out.println("already selected "+CardUtils.getCard(selectedKind, index));
@@ -143,6 +146,14 @@ public class PickCardWheel extends Activity {
 		activeId = R.id.imageButton_card_river;
 		resetSelect();
 	}
+	public void pickMyCard1(View view) {
+		activeId = R.id.imageButton_card_myCard_1;
+		resetSelect();
+	}
+	public void pickMyCard2(View view) {
+		activeId = R.id.imageButton_card_myCard_2;
+		resetSelect();
+	}
 	
 	private void play(int kind, int value) {
 		ImageButton img = (ImageButton)findViewById(activeId);
@@ -153,9 +164,9 @@ public class PickCardWheel extends Activity {
 //			active = null;
 			int[] prev = placedCards.put(activeId, new int[] {kind, value});
 			if (prev != null) {
-				unavailableCards.get(CardUtils.getKind(prev[0])).remove(new Integer(prev[1]));
+				unavailableCards.get(CardUtils.getKind(prev[0])).remove(Integer.valueOf(prev[1]));
 			}
-			unavailableCards.get(CardUtils.getKind(kind)).add(new Integer(value));
+			unavailableCards.get(CardUtils.getKind(kind)).add(Integer.valueOf(value));
 			activeId = cardButtons.get((cardButtons.indexOf(activeId)+1) % cardButtons.size());
 		}
 		resetSelect();
@@ -175,7 +186,7 @@ public class PickCardWheel extends Activity {
 		img.setImageURI(Uri.parse("android.resource://com.example.hifi_prototyp/drawable//ec"));
 		int[] prev = placedCards.put(activeId, null);
 		if (prev != null) {
-			unavailableCards.get(CardUtils.getKind(prev[0])).remove(new Integer(prev[1]));
+			unavailableCards.get(CardUtils.getKind(prev[0])).remove(Integer.valueOf(prev[1]));
 		}
 	}
 	
@@ -184,9 +195,14 @@ public class PickCardWheel extends Activity {
 	}
 	
 	private void setCards() {
-		for (Integer i : cardButtons) {
+		cardButtons = myCards ? cardButtonsHand : cardButtonsTable;
+		for (Integer i : cardButtonsTable) {
 			setCard(i);
 		}
+		for (Integer i : cardButtonsHand) {
+			setCard(i);
+		}
+		resetSelect();
 	}
 	
 	private void setCard(int id) {
@@ -199,12 +215,19 @@ public class PickCardWheel extends Activity {
 			card = "card_undef_big";
 		}
 		img.setImageURI(Uri.parse("android.resource://com.example.hifi_prototyp/drawable//"+card));
+		makeCardsVisible(img, id);
 	}
 	
+	private void makeCardsVisible(ImageButton img, int id) {
+		boolean myCard = (id == R.id.imageButton_card_myCard_1) || (id == R.id.imageButton_card_myCard_2);
+		img.setVisibility(myCard == myCards ? View.VISIBLE : View.INVISIBLE);
+	}
+
 	private void paintSelect() {
 		for (Integer i : cardButtons) {
 			ImageButton card = (ImageButton)findViewById(i);
 			card.setColorFilter(null);
+//			makeCardsVisible(card, i.intValue());
 		}
 		
 		ImageButton card = (ImageButton)findViewById(activeId);

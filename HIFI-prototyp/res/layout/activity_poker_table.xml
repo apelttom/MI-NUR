@@ -18,14 +18,22 @@
         android:id="@+id/imageButton_card_myCard_1"
         style="@style/button_card_small"
         android:layout_alignTop="@+id/button_back"
-        android:layout_toRightOf="@+id/imageButton_card_flop_2" />
+        android:layout_toRightOf="@+id/imageButton_card_flop_2"
+        android:adjustViewBounds="true"
+        android:maxWidth="34dp"
+        android:onClick="pickMyCard1"
+        android:scaleType="centerInside" />
         
     <ImageButton
         android:id="@+id/imageButton_card_myCard_2"
         style="@style/button_card_small"
         android:layout_alignTop="@+id/imageButton_card_myCard_1"
         android:layout_marginLeft="15dp"
-        android:layout_toRightOf="@+id/imageButton_card_myCard_1" />
+        android:layout_toRightOf="@+id/imageButton_card_myCard_1"
+        android:adjustViewBounds="true"
+        android:maxWidth="34dp"
+        android:onClick="pickMyCard2"
+        android:scaleType="fitCenter" />
 
     <ImageButton
         android:id="@+id/imageButton_card_flop_1"

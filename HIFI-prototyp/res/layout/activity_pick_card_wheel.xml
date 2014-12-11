@@ -66,4 +66,18 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true" />
 
+    <ImageButton
+        android:id="@+id/imageButton_card_myCard_1"
+        style="@style/button_card_big"
+        android:layout_alignLeft="@+id/imageButton_card_flop_1"
+        android:layout_alignTop="@+id/imageButton_card_flop_1"
+        android:onClick="pickMyCard1" />
+
+    <ImageButton
+        android:id="@+id/imageButton_card_myCard_2"
+        style="@style/button_card_big"
+        android:layout_alignLeft="@+id/imageButton_card_flop_2"
+        android:layout_alignTop="@+id/imageButton_card_flop_2"
+        android:onClick="pickMyCard2" />
+
 </RelativeLayout>
