@@ -38,31 +38,36 @@
 
     <Button
         android:id="@+id/button_login_passw_reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editText_register_passw"
-        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="displayPasswReset"
         android:text="@string/passw_reset_question"
-        android:onClick="displayPasswReset" />
-
-    <Button
-        android:id="@+id/button_register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button_login_passw_reset"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/green_button"
-        android:onClick="displayMainMenu"
-        android:text="@string/login_button_title" />
+        android:textSize="10sp" />
 
     <Button
         android:id="@+id/button_reg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="displayRegistration"
+        android:text="@string/login_register" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:text="@string/login_register"
-        android:onClick="displayRegistration" />
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/green_button"
+        android:onClick="displayMainMenu"
+        android:text="@string/login_button_title" />
 
 </RelativeLayout>

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 
 public class LogIn2 extends Activity {
 
@@ -24,8 +25,16 @@ public class LogIn2 extends Activity {
 	
 	/** Called when the user clicks the Login button */
 	public void displayMainMenu(View view) {
-		Intent displayPasswResetForm = new Intent(this, MainMenu.class);
-		startActivity(displayPasswResetForm);
+		EditText username = (EditText)findViewById(R.id.editText_register_username);
+		EditText password = (EditText)findViewById(R.id.editText_register_passw);
+		if(username.getText().toString().equals("")){
+			username.setError("Doesn't exist");
+		} else if (password.getText().toString().equals("")){
+			password.setError("Not valid");
+		}else{
+			Intent displayPasswResetForm = new Intent(this, MainMenu.class);
+			startActivity(displayPasswResetForm);
+		}
 	}
 	
 	/** Called when the user clicks the Login button */
