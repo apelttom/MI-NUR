@@ -55,7 +55,6 @@
     <string name="main_feedback">Feedback</string>
     <string name="title_activity_help">Help</string>
     <string name="dashboard_help">
-    Main screen:
         You can see your profile and the amount of days, you still have until
         your tariff will expire. Also you can choose to start a poker table
         simulation by clicking on the "Play" button. You can also change your
@@ -66,7 +65,6 @@
         you may return to the login screen.
     </string>
     <string name="table_help">
-	 Poker table screen:
     	Here you can simulate a real Texas Holdem match, and our application
     	will calculate the odds for you! If you wish to attach a specific card
     	to your hand or on the table, simply click on the card and card
@@ -75,7 +73,6 @@
     	may return to the title screen.  
     </string>
     <string name="user_profile_help">
-	 User profile screen:
 	 	You can see your profile picture and username here as well as amount
 	 	of the days	you still have left to use current cloud computation power.
 	 	If you wish to lower or increase the computation power used when
@@ -87,7 +84,6 @@
 	 	simulations in a blink of an eye.
     </string>
      <string name="feedback_help">
-	 Feedback screen:
     	This screen provides you an option to help us improve Poker King
     	application by sending us your opinions or advices. Also you can report
     	any error you will encounter during usage of Poker King application. 

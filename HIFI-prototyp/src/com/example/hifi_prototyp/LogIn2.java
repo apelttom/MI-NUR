@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 
 public class LogIn2 extends Activity {
-
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -18,8 +18,9 @@ public class LogIn2 extends Activity {
 	
 	/** Called when the user clicks the Password reset button */
 	public void displayPasswReset(View view) {
-		//TODO add context from login form = username
+		EditText username = (EditText)findViewById(R.id.editText_register_username);
 		Intent displayPasswResetForm = new Intent(this, PasswordReset.class);
+		displayPasswResetForm.putExtra("USERNAME", username.getText().toString());
 		startActivity(displayPasswResetForm);
 	}
 	
@@ -32,14 +33,15 @@ public class LogIn2 extends Activity {
 		} else if (password.getText().toString().equals("")){
 			password.setError("Not valid");
 		}else{
-			Intent displayPasswResetForm = new Intent(this, MainMenu.class);
-			startActivity(displayPasswResetForm);
+			Intent displayMainMenu = new Intent(this, MainMenu.class);
+			startActivity(displayMainMenu);
 		}
 	}
 	
 	/** Called when the user clicks the Login button */
 	public void displayRegistration(View view) {
-		Intent displayPasswResetForm = new Intent(this, RegisterUser.class);
-		startActivity(displayPasswResetForm);
+		Intent displayRegistration = new Intent(this, RegisterUser.class);
+		startActivity(displayRegistration);
 	}
+
 }

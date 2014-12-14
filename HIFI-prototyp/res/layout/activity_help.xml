@@ -7,7 +7,7 @@
     <ScrollView
         android:id="@+id/scrollView_help"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="210dp"
         android:layout_margin="10dp" >
 
         <LinearLayout
@@ -16,10 +16,24 @@
             android:orientation="vertical" >
 
             <TextView
+                android:id="@+id/textView_heading1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Main Screen:"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
                 android:id="@+id/textView_dasboard_help"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/dashboard_help" />
+
+            <TextView
+                android:id="@+id/textView_heading2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Poker table screen:"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <TextView
                 android:id="@+id/textView_poker_table_help"
@@ -28,10 +42,24 @@
                 android:text="@string/table_help" />
 
             <TextView
+                android:id="@+id/textView_heading3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User profile screen:"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
                 android:id="@+id/textView_user_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/user_profile_help" />
+            
+            <TextView
+                android:id="@+id/textView_heading4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feedback screen:"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
             
             <TextView
                 android:id="@+id/textView_feedback"
@@ -42,5 +70,9 @@
         </LinearLayout>
                     
     </ScrollView>
+
+        <Button
+        android:id="@+id/button_back"
+        style="@style/button_back" />
 
 </RelativeLayout>

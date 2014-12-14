@@ -1,11 +1,15 @@
 package com.example.hifi_prototyp;
 
+import java.util.Random;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class PokerTable extends Activity {
 	
@@ -18,6 +22,13 @@ public class PokerTable extends Activity {
 	@Override
 	public void onWindowFocusChanged(boolean hasFocus) {
 		super.onWindowFocusChanged(hasFocus);
+		Random randomGenerator = new Random();
+		int prob1 = randomGenerator.nextInt(100);
+		int prob2 = 100 - prob1;
+		TextView myProbability = (TextView)findViewById(R.id.textView_win_prob_2);
+		TextView enemyProbability = (TextView)findViewById(R.id.textView_win_prob_1);
+		myProbability.setText("Win: "+Integer.toString(prob1)+"%");
+		enemyProbability.setText("Win: "+Integer.toString(prob2)+"%");
 		setCards();
 	}
 

@@ -43,7 +43,7 @@
             android:textColor="#000000" />
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/textView_heading1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/editText_register_username"
@@ -126,7 +126,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/editText_register_username"
-            android:layout_toRightOf="@+id/textView1"
+            android:layout_toRightOf="@+id/textView_heading1"
             android:ems="10"
             android:hint="@string/email_hint" />
 
