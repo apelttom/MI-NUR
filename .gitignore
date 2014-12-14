@@ -41,3 +41,6 @@ proguard/
 *.ipr
 *.iws
 .idea/
+
+# Dont ignore this files
+!AndroidManifest.xml

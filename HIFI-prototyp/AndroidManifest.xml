@@ -5,63 +5,69 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="21"
+        android:minSdkVersion="16"
         android:targetSdkVersion="21" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:debuggable="true">
         <activity
             android:name=".PasswordReset"
-            android:label="@string/title_activity_password_reset" >
+            android:label="@string/title_activity_password_reset"
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".UserProfile"
-            android:label="@string/title_activity_user_profile" >
-        </activity>title_activity_log_in2
-        <activity
-            android:name=".PokerTable"
-            android:label="@string/title_activity_poker_table" >
+            android:label="@string/title_activity_user_profile"
+            android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name=".MyActivity"
-            android:label="@string/title_activity_my"
-            android:parentActivityName="android.app.TabActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="android.app.TabActivity" />
+            android:name=".PokerTable"
+            android:label="@string/title_activity_poker_table"
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".LogIn2"
-            android:label="@string/application_title" >
+            android:label="@string/title_activity_log_in2"
+            android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainMenu"
-            android:label="Main" >
+            android:name=".Feedback"
+            android:label="@string/title_activity_feedback"
+            android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name=".Feedback"
-            android:label="Feedback" >
+            android:name=".MainMenu"
+            android:label="@string/application_title"
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".PickCard"
-            android:label="PickCard" >
+            android:label="@string/application_title"
+            android:screenOrientation="landscape" >
+        </activity>
+         <activity
+            android:name=".PickCardWheel"
+            android:label="@string/application_title"
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".RegisterUser"
-            android:label="User registration" >
+            android:label="@string/title_activity_register"
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name=".Help"
-            android:label="@string/title_activity_help" >
-        </activity>
+            android:label="@string/title_activity_help"
+            android:screenOrientation="landscape" >
+        </activity> 
     </application>
 
 </manifest>
