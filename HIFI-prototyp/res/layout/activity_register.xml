@@ -98,6 +98,7 @@
             android:layout_marginTop="14dp"
             android:layout_toRightOf="@+id/editText_register_password_again"
             android:enabled="false"
+            android:onClick="register"
             android:text="@string/register_button" />
 
         <Button
@@ -117,7 +118,8 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:ems="10"
-            android:hint="@string/username_hint">
+            android:hint="@string/username_hint" >
+
             <requestFocus />
         </EditText>
 
@@ -149,6 +151,7 @@
             android:ems="10"
             android:hint="@string/passw_hint"
             android:inputType="textPassword" >
+
         </EditText>
 
         <EditText
